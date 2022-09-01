@@ -110,7 +110,7 @@ a:visited {
     margin-left: 1rem;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1000px) {
     main {
         padding: 0 1rem;
     }
@@ -119,11 +119,36 @@ a:visited {
         padding: 0 1rem;
     }
 
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 1.5rem;
+    }
+
     .main-nav {
         display: none;
     }
 
     .scroll-top-button {
         display: none;
+    }
+
+    .social-media-links {
+        display: none;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card__content {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+
+    .card__image {
+        width: 100%;
     }
 }
