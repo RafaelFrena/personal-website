@@ -19,6 +19,13 @@ main {
     margin: 0 auto;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 14px;
+}
 
 section {
     margin-top: 5rem;
@@ -30,7 +37,11 @@ section > h3 {
 }
 
 section p {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
+}
+
+a:visited {
+    color: #0000ee;
 }
 
 .hero__content {
@@ -60,12 +71,20 @@ section p {
 }
 
 .scroll-top-button {
-    display: flex;
-    justify-content: flex-end;
+    display: none;
     position: sticky;
     top: 85%;
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10rem;
     right: 10rem;
-    width: 100%;
+    transform: translate(-50%);
 }
 
 .scroll-down {
@@ -76,12 +95,19 @@ section p {
     margin-top: 8rem;
 }
 
-footer {
+.card {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    font-size: 14px;
+    margin-top: 2rem;
+}
+
+.card__image {
+    height: 260px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.card__content {
+    margin-left: 1rem;
 }
 
 @media screen and (max-width: 920px) {
