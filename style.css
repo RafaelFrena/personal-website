@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -6,9 +8,11 @@ html {
 body {
     min-width: 100vw;
     min-height: 100vh;
-    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-family: 'Baloo 2', cursive;
     font-size: 18px;
     line-height: 30px;
+    background-color: #282828;
+    color: #cfcfcf;
 }
 
 main {
@@ -40,21 +44,49 @@ section p {
     margin-top: 1rem;
 }
 
-a:visited {
-    color: #0000ee;
+a {
+    text-decoration: none;
+    color: #639559;
+    position: relative;
 }
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0.5px;
+    bottom: 2px;
+    left: 0;
+    background-color: #639559;
+    transition: .2s;
+    transform-origin: bottom right;
+}
+
+a:hover::after {
+    width: 100%;
+    transform-origin: bottom left;
+}
+
 
 .hero__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 50vh;
+    line-height: 0.8;
+    font-weight: 700;
+    background-image: linear-gradient(125deg,#639559,#205caa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero__title {
     font-weight: bold;
     font-size: 4rem;
     margin-bottom: 1rem;
+
+        
 }
 
 .hero__subtitle {
@@ -68,6 +100,15 @@ a:visited {
     position: sticky;
     top: 10rem;
     width: fit-content;
+}
+
+.main-nav::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 300px;
+    left: -15px;
+    background-color: #205caa;
 }
 
 .scroll-top-button {
