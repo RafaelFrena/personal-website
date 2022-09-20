@@ -76,6 +76,7 @@ section p {
 
 a {
     text-decoration: none;
+    width: fit-content;
     color: var(--link-color);
     position: relative;
 }
@@ -104,7 +105,7 @@ a {
     height: 50vh;
     line-height: 0.8;
     font-weight: 700;
-    background-image: linear-gradient(125deg,#79c7c5,#ade1e5);
+    background-image: linear-gradient(125deg,#001a5c,#5d62b9);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -112,12 +113,12 @@ a {
 
 .hero__title {
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 5.5rem;
     margin-bottom: 1rem;
 }
 
 .hero__subtitle {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .links-container {
@@ -171,6 +172,25 @@ a {
     width: 100%;
     margin-top: 4rem;
     animation: float ease-in 3s infinite;
+}
+
+.go-downwards-button {
+    /* background-color: rgba(255, 255, 255, .2);
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    animation: float-down ease-in .8s; */
+}
+
+@keyframes float-down {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(450px, 250px);
+    }
 }
 
 @keyframes float {
